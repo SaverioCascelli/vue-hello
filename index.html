@@ -10,7 +10,12 @@
 </head>
 <body>
     
-    
+    <div id="app">
+        <h1 :class="red">{{msg}}</h1>
+        <button @click="switchToggle()">toggle</button><br>
+        <p v-show="toggle"  >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, esse.</p>
+        <img v-show="!toggle" :src="'img/' + srcDoggo1" alt="">
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
